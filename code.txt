@@ -1,0 +1,134 @@
+#include <Keyboard.h>
+int dat1=A0;
+int dat2=A1;
+int dat3=A2;
+int dat4=A3;
+
+int val1;
+int val2;
+int val3;
+int val4;
+
+int d1=2; // 2
+int d2=0; //2   
+int d3=0; 
+
+
+int a=14;
+int b=24;
+//int c=-83;
+
+int a1= 510+a;    // 515      480
+int a2= 440+a ;    // 450      460        ідеал
+int a3= 500+b;    // 489      465
+int a4= 460+a;     // 462      445    
+
+
+int delta = 20;   // 30 20
+   
+boolean k=1;
+boolean kk=1;
+boolean kkk=1;
+boolean kkkk=1;
+
+
+void setup() {
+  
+Serial.begin(9600);
+Keyboard.begin();
+   
+ pinMode(dat1, INPUT);
+ pinMode(dat2, INPUT);
+ pinMode(dat3, INPUT);
+ pinMode(dat4, INPUT);
+ 
+}
+
+void loop() {
+ 
+val1=analogRead(dat1);
+val2=analogRead(dat2);
+val3=analogRead(dat3);
+val4=analogRead(dat4);
+
+
+//ddwasd
+
+
+// зменщення значення- зменш перекліку
+
+
+   // 11111111111111111111111111111111111 TOP   ==== 515
+  if (val1 <a1 && k==1  ) {
+     k=0;
+      delay(d3);
+      Serial.print("val1:");
+      Serial.print(val1);
+      Serial.println("  Top");
+      Keyboard.print("w");           
+     delay(d1);
+    
+       }
+    if (val1 >=a1+delta  && k==0){     
+      k=1;
+ 
+       delay(d2);
+     }  
+
+  //  22222222222222222222222222222222222 RIGHT
+
+   if (val2  <a2 && kk==1) {        
+         kk=0;
+          delay(d3);
+   Serial.print("val2:");
+   Serial.print(val2);
+   Serial.println("   Right");
+   Keyboard.print("d");
+  delay(d1);
+       
+  }
+   if (val2 >=a2+delta  && kk==0) {
+ 
+      kk=1;
+       delay(d2);
+     
+     }
+
+//  3333333333333333333333333333333333333 Left  487
+
+      if (val3  <a3 && kkk==1) {   
+         kkk=0;
+          delay(d3);
+       Serial.print("val3:");
+      Serial.print(val3);
+      Serial.println("  Leftdas");
+      Keyboard.print("a");
+     delay(d1);
+       
+  }
+    if (val3 >=a3+delta  && kkk==0) {
+    
+       kkk=1;
+       delay(d2);
+    }
+     
+//  4444444444444444444444444444444444444 bot
+
+       if (val4  <a4 && kkkk==1) {      
+            kkkk=0;
+             delay(d3);
+       Serial.print("val4:");      
+      Serial.print(val4);
+      Serial.println(" Bot");   
+      Keyboard.print("s");
+    delay(d1);
+     
+     
+  }
+    if (val4 >=a4+delta && kkkk==0) {
+ 
+     kkkk=1;
+       delay(d2);
+     }
+ 
+}
