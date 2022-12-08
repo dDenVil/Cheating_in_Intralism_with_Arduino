@@ -29,12 +29,11 @@ Code is really simple, the hardest was to callibrate timings. It is really shitt
 
 ## In-game results
 They are shocking.  __I achieved everything I wanted ;D__
+Unfortunately, a few weeks later __I was banned__ _(lately after 3 year - unbanned, maybe, I am not sure, game servers just dead)_.
 
 ![Top](https://github.com/dDenVil/Cheating_in_Intralism_with_Arduino/blob/main/Readme_assets/top.jpg?raw=true)
 ![Top](https://github.com/dDenVil/Cheating_in_Intralism_with_Arduino/blob/main/Readme_assets/top2.jpg?raw=true)
 ![Top](https://github.com/dDenVil/Cheating_in_Intralism_with_Arduino/blob/main/Readme_assets/top3.jpg?raw=true)
-
-Unfortunately, few weeks later __I was banned__ _(lately unbanned)_.
 
 ![Ban](https://github.com/dDenVil/Cheating_in_Intralism_with_Arduino/blob/main/Readme_assets/ban.jpg?raw=true)
 
